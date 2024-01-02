@@ -1,4 +1,75 @@
-.title {
-	font-weight: bold;
-	font-size: 30px;
+body{
+	text-align: center;
 }
+
+ul{
+	display: flex;
+	justify-content: center;
+}
+
+nav{
+	margin: 2rem auto 1rem auto;
+}
+
+/*#home*/
+
+a{
+	padding:1rem;
+}
+
+.profile {
+	border-radius: 30%;
+	display: inline-block;
+	margin: 20px;
+	background-color: rgba(0, 255, 255, 0.1);
+	border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.profile img{
+	padding: 1rem;
+	border-radius: 30%;
+}
+
+#home h3{
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#home .scroll{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	cursor: pointer;
+
+}
+
+#home .scroll a{
+	display: block;
+	padding-top: 60px;
+}
+
+#home .scroll a span{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 30px;
+	height: 50px;
+	margin-left: -15px;
+	border: 2px solid black;
+	border-radius: 50px;
+	box-sizing: border-box;
+
+}
+
+/*
+지금 할 것
+- nav 정렬
+- 스크롤 만들기
+- 폰트 설정
+
+나중에 할 것
+- 스마트폰과 같은 것에서 반응형으로 만들기
+- 아이콘들 다시 교체
+*/
