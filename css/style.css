@@ -1,5 +1,8 @@
 body{
 	text-align: center;
+	background-color: #607274;
+	color: #FAEED1;
+	 font-family: 'Roboto Slab', serif;
 }
 
 ul{
@@ -9,36 +12,40 @@ ul{
 
 nav{
 	margin: 2rem auto 1rem auto;
+	font-size: 1.2rem;
+}
+
+nav a{
+	margin: 0 10px;
 }
 
 /*#home*/
+
+#home{
+	margin-top: 3.5rem
+}
 
 a{
 	padding:1rem;
 }
 
-.profile {
-	border-radius: 30%;
-	display: inline-block;
-	margin: 20px;
-	background-color: rgba(0, 255, 255, 0.1);
-	border: 1px solid rgb(0, 0, 0, 0.5);
+img{
+	border-radius: 20%;
+	box-shadow: 2px 2px 10px #B2A59B;
 }
 
-.profile img{
-	padding: 1rem;
-	border-radius: 30%;
-}
-
-#home h3{
+#home h2{
+	margin: 2rem;
 	font-style: italic;
 	font-size: 20px;
 	font-weight: 600;
 }
 
+/* home - scoll */
+
 #home .scroll{
 	position: absolute;
-	bottom: 10%;
+	bottom: 5%;
 	left: 50%;
 	transform: translate(-50%, -10%);
 	cursor: pointer;
@@ -63,11 +70,61 @@ a{
 
 }
 
+#home .scroll a span::before {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: "";
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: black;
+	border-radius: 100%;
+	-webkit-animation: sdb 2s infinite;
+	animation: sdb 2s infinite;
+	box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb {
+	0%{
+		-webkit-transform: translate(0,0);
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes sdb {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /*
 지금 할 것
-- nav 정렬
-- 스크롤 만들기
-- 폰트 설정
+- nav 사이즈 키우기
+- scroll 더 밑으로 
+- 되면 사진 키우기
+- 알맞은 색상 고르기
 
 나중에 할 것
 - 스마트폰과 같은 것에서 반응형으로 만들기
