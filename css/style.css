@@ -40,10 +40,13 @@ main {
     padding-top: 70px; /* 헤더 높이만큼의 여백 추가 */
 }
 
+section {
+	height: 100vh;
+}
+
 /*#home*/
 
 #home {
-	height: 100vh;
     padding-top: 20px; /* 필요에 따라 조절 가능한 추가 여백 */
 	/* position: relative; */
 }
@@ -140,19 +143,106 @@ main {
     }
 }
 
+/* About me */
+
+.about{
+  background: rgba(218,218,218,1)
+}
+
+.about a{
+  color: #111
+}
+
+.photo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+.photo img{
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  display: block;
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+  margin-top: -10px;
+}
+
+.photo:hover img{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow{
+  display: block;
+  position:absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+}
+
+.about h1{
+  position: absolute;
+  z-index: 1;
+  transform: translate(-25%, -65%);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+/* Ends */
+
+#author{
+  font-family: Helvetica, Arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #888;
+}
+
+#author:hover{
+  color: #111;
+}
+
 /* effect */
 
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
+#Achievement {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.container {
+.containerS {
   position: relative;
   width: 1160px;
   display: flex;
@@ -162,7 +252,7 @@ body {
   perspective: 500px;
   margin: auto;
 }
-.container .box {
+.containerS .box {
   position: relative;
   width: 275px;
   height: 275px;
@@ -173,25 +263,25 @@ body {
   margin-right: 15px;
   margin-top: 45px;
 }
-.container:hover .box {
+.containerS:hover .box {
   transform: rotateY(25deg);
 }
-.container .box:hover ~ .box {
+.containerS .box:hover ~ .box {/* box가 hover 됐을 때 container안의 다른 box들 선택*/
   transform: rotateY(-25deg);
 }
-.container .box:hover {
+.containerS .box:hover {
   transform: rotateY(0deg) scale(1.25);
-  z-index: 1;
+  z-index: 1; /* 다른 요소 위에 보이게 하기 위함( 숫자가 크면 더 위에서 보임)*/
   box-shadow: 0 25px 40px rgba(0,0,0,0.5);
 }
-.container .box .imgBx {
+.containerS .box .imgBx {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.container .box .imgBx:before {
+.containerS .box .imgBx:before {
   content: '';
   position: absolute;
   top: 0;
@@ -200,14 +290,16 @@ body {
   height: 100%;
   background: linear-gradient(180deg,#f00,#000);
   z-index: 1;
-  opacity: 0;
+  opacity: 0; 
+/*빨간색을 투명하게 만들어 놓고 시작*/
   transition: 0.5s;
   mix-blend-mode: multiply;
 }
-.container .box:hover .imgBx:before {
+.containerS .box:hover .imgBx:before {
   opacity: 1;
+/*  opacity의 값은 0부터 1까지의 범위를 가지며, 0은 완전 투명(알파값이 0), 1은 완전 불투명(알파값이 1)을 의미합니다.  */
 }
-.container .box .imgBx img {
+.containerS .box .imgBx img {
   position: absolute;
   top: 0;
   left: 0;
@@ -215,7 +307,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.container .box .content {
+.containerS .box .content {
   position: absolute;
   top: 0;
   left: 0;
@@ -227,7 +319,7 @@ body {
   align-items: flex-end;
   box-sizing: border-box;
 }
-.container .box .content h2 {
+.containerS .box .content h2 {
   color: #fff;
   transition: 0.5s;
   text-transform: uppercase;
@@ -236,29 +328,28 @@ body {
   transform: translateY(200px);
   transition-delay: 0.3s;
 }
-.container .box:hover .content h2 {
+.containerS .box:hover .content h2 {
   transform: translateY(0px);
 }
-.container .box .content p {
+.containerS .box .content p {
   color: #fff;
   transition: 0.5s;
   font-size: 14px;
   transform: translateY(200px);
   transition-delay: 0.4s;
 }
-.container .box:hover .content p {
+.containerS .box:hover .content p {
   transform: translateY(0px);
 }
 
 
 /*
 지금 할 것
-- nav 사이즈 키우기
-- scroll 더 밑으로 
-- 되면 사진 키우기
-- 알맞은 색상 고르기
+- about 페이지 한 페이지로 분리, 색 다시 가져오고, 왼쪽에 사이즈 좀 있게 만들기
+- about 페이지 옆으로 내 자기소개 넣기
 
 나중에 할 것
 - 스마트폰과 같은 것에서 반응형으로 만들기
 - 아이콘들 다시 교체
+- achivement 페이지에서 사진들 화질 개선이랑 facebook 이미지 좀 왼쪽으로 이동
 */
