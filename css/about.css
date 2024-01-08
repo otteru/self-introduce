@@ -1,0 +1,11 @@
+/* About me */
+
+#about{
+	display: flex;
+}
+
+#about img{
+	height: 700px;
+	
+}
+

@@ -8,3 +8,13 @@ https://colorhunt.co/palette/607274faeed1ded0b6b2a59b
 - css effect
 https://codepen.io/hex
 https://codepen.io/TiagoLopes/pen/vZBMWB
+
+
+지금 할 것
+- about 페이지 한 페이지로 분리, 색 다시 가져오고, 왼쪽에 사이즈 좀 있게 만들기
+- about 페이지 옆으로 내 자기소개 넣기
+
+나중에 할 것
+- 스마트폰과 같은 것에서 반응형으로 만들기
+- 아이콘들 다시 교체
+- achivement 페이지에서 사진들 화질 개선이랑 facebook 이미지 좀 왼쪽으로 이동
