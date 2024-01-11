@@ -1,11 +1,22 @@
 /* About me */
-
 #about{
+	padding-top: 70px;
 	display: flex;
+  	flex: 1;
+	justify-content: space-evenly;
 }
 
 #about img{
 	height: 700px;
-	
+	padding-top: 30px;
 }
 
+#about p{
+	text-align: left;
+	font-size: 20px;
+	padding-top: 100px;
+}
+
+#about .index{
+	font-weight: bold;
+}

@@ -18,3 +18,5 @@ https://codepen.io/TiagoLopes/pen/vZBMWB
 - 스마트폰과 같은 것에서 반응형으로 만들기
 - 아이콘들 다시 교체
 - achivement 페이지에서 사진들 화질 개선이랑 facebook 이미지 좀 왼쪽으로 이동
+
+우선 그냥 막 만들어서 틀 만들고 수정해나가자.
