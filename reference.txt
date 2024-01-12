@@ -9,6 +9,8 @@ https://colorhunt.co/palette/607274faeed1ded0b6b2a59b
 https://codepen.io/hex
 https://codepen.io/TiagoLopes/pen/vZBMWB
 
+-velog 
+https://velog.io/@ybkim3603/Velog%EB%B2%A8%EB%A1%9C%EA%B7%B8-%EC%82%AC%EC%9A%A9%EB%B2%95-%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC
 
 지금 할 것
 - about 페이지 한 페이지로 분리, 색 다시 가져오고, 왼쪽에 사이즈 좀 있게 만들기

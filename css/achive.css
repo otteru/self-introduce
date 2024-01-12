@@ -1,11 +1,15 @@
 /* effect */
 
 #Achievement {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding-top:150px;
 }
+
+
+#littleTitle{
+	font-size: 30px;
+}
+
 .containerS {
   position: relative;
   width: 1160px;
@@ -15,6 +19,7 @@
   transform-style: preserve-3d;
   perspective: 500px;
   margin: auto;
+  padding-top: 100px;
 }
 .containerS .box {
   position: relative;
