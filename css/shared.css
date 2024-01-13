@@ -1,9 +1,9 @@
 body{
 	text-align: center;
-	background-color: #607274;
 	color: #FAEED1;
 	font-family: 'Roboto Slab', serif;
-	 overflow-x: hidden;
+	overflow-x: hidden;
+	background-color: #607274;
 }
 
 ul{

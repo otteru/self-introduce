@@ -16,12 +16,12 @@
 
 #contact .category h2{
 	font-size: 3rem;
-	animation-name: grow;
+	/* animation-name: grow;
 	animation-duration: 2s;
 	animation-delay: 1s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
-	animation-direction:normal;	
+	animation-direction:normal;	 */
 	
 }
 
@@ -45,6 +45,20 @@
 }
 
 @keyframes grow{
-	from {font-size: 1rem}
-	to {font-size: 1.5rem}}
+	from {
+		transform: translateY(1.5rem);
+	}
+	to {
+		transform: translateY(0);
+	}
 }
+
+@keyframes grow-out {
+	from {
+		transform: translateY(0);
+	}
+	to { 
+		transform: translateY(1.5rem);
+	}
+}
+

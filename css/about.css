@@ -1,11 +1,12 @@
 #about{
 	padding-top: 70px;
+	background-color: #545E72;
 }
 
 #about img{
 	position: absolute;
 	height: 700px;
-	transform: translate(-150%, 0);
+	transform: translate(-110%, 0);
 }
 
 
@@ -13,7 +14,7 @@
 	position: absolute;
 	text-align: left;
 	font-size: 20px;
-	transform: translate(200%, 35%);
+	transform: translate(210%, 35%);
 	line-height : 2em;
 }
 
